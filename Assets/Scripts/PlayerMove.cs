@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float speed = 5f;
-    
+    [HideInInspector]
+    public float lasthorizontal;
+    [HideInInspector]
+    public float lastvertical;
     Rigidbody2D rb;
     [HideInInspector]
     public Vector2 mdir;
@@ -16,6 +19,16 @@ public class PlayerMove : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         mdir = new Vector2(moveX, moveY).normalized;
+
+        if (mdir.x != 0)
+        {
+            lasthorizontal = mdir.x;
+        }
+
+        if (mdir.y != 0)
+        {
+            lastvertical = mdir.y;
+        }
     }
 
     void move()

@@ -32,13 +32,13 @@ public class PlayerAnimation : MonoBehaviour
 
     void spritedircheck ()
     {
-        if (pm.mdir.x > 0)
-        {
-            sr.flipX = false;
-        }
-        else if (pm.mdir.x < 0)
+        if (pm.lasthorizontal < 0)
         {
             sr.flipX = true;
+        }
+        else
+        {
+            sr.flipX = false;
         }
     }
 }
