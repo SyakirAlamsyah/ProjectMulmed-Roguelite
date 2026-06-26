@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float speed = 5f;
+    
     Rigidbody2D rb;
-    Vector2 mdir;
+    [HideInInspector]
+    public Vector2 mdir;
 
     void inputmanagement()
     {
