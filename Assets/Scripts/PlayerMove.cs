@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
         mdir = new Vector2(moveX, moveY).normalized;
     }
 
-    void movement()
+    void move()
     {
         rb.velocity = new Vector2(mdir.x * speed, mdir.y * speed);
     }
@@ -24,7 +24,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -33,8 +33,8 @@ public class PlayerMove : MonoBehaviour
         inputmanagement();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        movement();
+        move();
     }
 }
