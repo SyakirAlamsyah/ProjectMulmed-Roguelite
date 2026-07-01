@@ -11,11 +11,9 @@ GameObject:
   - component: {fileID: 2368960880879249029}
   - component: {fileID: 4612035129477504710}
   - component: {fileID: -6015914581131448169}
-  - component: {fileID: 3822174457216190286}
-  - component: {fileID: 8693540123434254749}
   m_Layer: 0
   m_Name: terrain_477
-  m_TagString: Prop
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,32 +130,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3822174457216190286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8061446149811923806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24115c0d56cfb594995c027819da5dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
---- !u!114 &8693540123434254749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8061446149811923806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e60aed38f006a934ca54b6f120554ab5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drops:
-  - name: Bandage
-    itemPrefab: {fileID: 881846251653653131, guid: f8650d9ac8310f24fbf01e6c510d1abd, type: 3}
-    dropRate: 50

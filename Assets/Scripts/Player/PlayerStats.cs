@@ -110,13 +110,4 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Player has been killed");
     }
 
-    public void RestoreHealth(float amount)
-    {
-        currentHealth += amount;
-        if (currentHealth > charData.MaxHealth)
-        {
-            currentHealth = charData.MaxHealth;
-        }
-    }
-
 }
