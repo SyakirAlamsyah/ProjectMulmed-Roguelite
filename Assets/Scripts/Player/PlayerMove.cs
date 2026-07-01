@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D rb;
     [HideInInspector]
     public Vector2 mdir;
+    [HideInInspector]
+    public Vector2 lastMovedVector;
 
     void inputmanagement()
     {
@@ -23,11 +25,18 @@ public class PlayerMove : MonoBehaviour
         if (mdir.x != 0)
         {
             lasthorizontal = mdir.x;
+            lastMovedVector = new Vector2(lasthorizontal, 0f);
         }
 
         if (mdir.y != 0)
         {
             lastvertical = mdir.y;
+            lastMovedVector = new Vector2(0f, lastvertical);
+        }
+
+        if (mdir.x != 0 && mdir.y != 0)
+        {
+            lastMovedVector = new Vector2(lasthorizontal, lastvertical);
         }
     }
 
@@ -40,6 +49,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        lastMovedVector = new Vector2(1, 0f);
     }
 
     // Update is called once per frame
