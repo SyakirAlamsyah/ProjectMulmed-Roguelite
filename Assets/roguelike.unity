@@ -377,11 +377,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3b038433c9d6e41962c6b84392c5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   lasthorizontal: 0
   lastvertical: 0
   mdir: {x: 0, y: 0}
   lastMovedVector: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: c56c142f38d8b2945b9e1f7c000f3051, type: 2}
 --- !u!95 &1574403083
 Animator:
   serializedVersion: 5

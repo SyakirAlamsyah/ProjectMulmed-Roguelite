@@ -44,7 +44,7 @@ public class PlayerStats : MonoBehaviour
         currentProjectileSpeed = charData.ProjectileSpeed;
     }
 
-    void start()
+    void Start()
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
     }
