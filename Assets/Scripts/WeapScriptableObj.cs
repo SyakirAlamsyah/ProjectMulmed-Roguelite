@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "WeapScriptableObj", menuName = "ScriptableObjects/Weapon")]
+
+public class WeapScriptableObj : ScriptableObject
+{
+    public GameObject prefab;
+    //Base stats for weapon 
+    public float damage;
+    public float speed;
+    public float cooldownDuration;
+    public int pierce;
+
+}
