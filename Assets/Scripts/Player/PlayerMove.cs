@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speed = 5f;
     [HideInInspector]
     public float lasthorizontal;
     [HideInInspector]
@@ -14,6 +13,8 @@ public class PlayerMove : MonoBehaviour
     public Vector2 mdir;
     [HideInInspector]
     public Vector2 lastMovedVector;
+
+    public CharScriptableObj characterData;
 
     void inputmanagement()
     {
@@ -42,7 +43,7 @@ public class PlayerMove : MonoBehaviour
 
     void move()
     {
-        rb.velocity = new Vector2(mdir.x * speed, mdir.y * speed);
+        rb.velocity = new Vector2(mdir.x * characterData.MoveSpeed, mdir.y * characterData.MoveSpeed);
     }
 
     // Start is called before the first frame update
