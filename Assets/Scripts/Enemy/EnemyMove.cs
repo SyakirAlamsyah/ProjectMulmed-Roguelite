@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    public EnemyScriptableObj enemyData;
     Transform player;
-    public float speed;
+
 
     void Start()
     {
@@ -16,6 +16,6 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, player.position, enemyData.MoveSpeed * Time.deltaTime);
     }
 }

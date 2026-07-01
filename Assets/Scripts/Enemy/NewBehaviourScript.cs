@@ -4,13 +4,11 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "WeapScriptableObj", menuName = "ScriptableObjects/Weapon")]
 
-public class WeapScriptableObj : ScriptableObject
+public class NewBehaviourScript : MonoBehaviour
 {
-    public GameObject prefab;
-    //Base stats for weapon 
+
+    public float moveSpeed;
+    public float maxHealth;
     public float damage;
-    public float speed;
-    public float cooldownDuration;
-    public int pierce;
 
 }

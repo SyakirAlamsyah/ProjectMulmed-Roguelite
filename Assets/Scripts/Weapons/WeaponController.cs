@@ -9,18 +9,15 @@ public class WeaponController : MonoBehaviour
 
     [Header("Weapon Stats")]
     public WeapScriptableObj weaponData;
-    public GameObject prefab;
-    public float damage;
-    public float speed;
-    public float cooldownDuration;
     float currentCooldown;
-    public int pierce;
+
+
     protected PlayerMove pm;
     
     protected virtual void Start()
     {
         pm = FindObjectOfType<PlayerMove>();
-        currentCooldown = cooldownDuration; //At the start set the current cd to be the cd duration
+        currentCooldown = weaponData.CooldownDuration; //At the start set the current cd to be the cd duration
     }
 
     
@@ -35,6 +32,6 @@ public class WeaponController : MonoBehaviour
 
     protected virtual void attack()
     {
-        currentCooldown = cooldownDuration; //Reset the cooldown 
+        currentCooldown = weaponData.CooldownDuration; //Reset the cooldown 
     }
 }
