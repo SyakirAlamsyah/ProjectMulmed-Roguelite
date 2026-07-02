@@ -1,8 +1,12 @@
 
 # Project Multimedia - An Ordinary Zombie Game
-Futsuu ni Zonbi Ge atau An Ordnary Zombie Game adalah sebuah game roguelike, di mana karakternya seorang penduduk desan bernama Yamato berusaha bertahan hidup selama mungkin dari Zombie Apocalypse.
+Futsuu ni Zonbi Ge atau An Ordnary Zombie Game adalah sebuah game roguelike di mana karakternya seorang penduduk desan bernama Yamato berusaha bertahan hidup selama mungkin dari Zombie Apocalypse.
 
+## About this repository
 Project ini merupakan pemenuhan tugas projek praktikum Multimedia, yaitu membuat 2D game dengan Unity.
+
+Jika anda ingin clone/fork repositori ini atau mencoba gamenya, saat ini prototype game utamanya yang propper berada di [Branch SimpleVer](https://github.com/SyakirAlamsyah/ProjectMulmed-Roguelite/tree/SimpleVer). Silahkan di cek!
+
 
 ## Developer
 - Syakir Alamsyah
@@ -11,10 +15,7 @@ Project ini merupakan pemenuhan tugas projek praktikum Multimedia, yaitu membuat
 - FX.Oktabimo DwiPriabudi Sumintro
 - Rafa Fakhri Aldivi
 
-
 ## Mermaid Diagrams
-
-
 ```mermaid
 graph TD
     A([Start Game]) --> B[Inisialisasi Player, Kamera, & Enemy Spawner]
@@ -59,5 +60,6 @@ graph TD
     AB -- Ya --> AC([Game Over])
     AB -- Tidak --> C
 ```
+
 
 
