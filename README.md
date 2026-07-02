@@ -12,7 +12,7 @@ Project ini merupakan pemenuhan tugas projek praktikum Multimedia, yaitu membuat
 - Rafa Fakhri Aldivi
 
 
-## 📊 Mermaid Diagrams
+## Mermaid Diagrams
 
 
 ```mermaid
@@ -30,6 +30,8 @@ graph TD
     G --> H{Cooldown Serangan Selesai?}
     H -- Ya --> I[Keluarkan Serangan / Proyektil]
     H -- Tidak --> J[Tunggu Cooldown]
+    J --> H{Cooldown Serangan Selesai?}
+
     I --> K[Cek Hit/Tabrakan Serangan dengan Musuh]
     
     %% Sistem Spawner Musuh (Part 7)
